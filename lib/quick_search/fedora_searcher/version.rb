@@ -1,5 +1,3 @@
-module QuickSearch
-  module FedoraSearcher
-    VERSION = '0.1.0'
-  end
+module QuickSearchFedoraSearcher
+  VERSION = '0.1.0'
 end

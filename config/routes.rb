@@ -1,2 +1,2 @@
-QuickSearch::FedoraSearcher::Engine.routes.draw do
+QuickSearchFedoraSearcher::Engine.routes.draw do
 end

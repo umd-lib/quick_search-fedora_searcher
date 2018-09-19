@@ -1,7 +1,5 @@
-module QuickSearch
-  module FedoraSearcher
-    class Engine < ::Rails::Engine
-      isolate_namespace QuickSearch::FedoraSearcher
-    end
+module QuickSearchFedoraSearcher
+  class Engine < ::Rails::Engine
+    isolate_namespace QuickSearchFedoraSearcher
   end
 end
