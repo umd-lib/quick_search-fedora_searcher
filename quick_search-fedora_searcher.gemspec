@@ -1,7 +1,9 @@
-$:.push File.expand_path("lib", __dir__)
+# frozen_string_literal: true
+
+$LOAD_PATH.push File.expand_path('lib', __dir__)
 
 # Maintain your gem's version:
-require "quick_search/fedora_searcher/version"
+require 'quick_search/fedora_searcher/version'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
@@ -14,7 +16,7 @@ Gem::Specification.new do |s|
   s.description = 'Fedora searcher for NCSU Quick Search.'
   s.license     = 'Apache 2.0'
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir['{app,config,db,lib}/**/*', 'LICENSE', 'Rakefile', 'README.md']
 
   s.add_dependency 'quick_search-core', '~> 0'
   s.add_development_dependency 'rubocop', '= 0.52.1'
