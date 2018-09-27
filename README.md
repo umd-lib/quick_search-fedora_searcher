@@ -7,7 +7,7 @@ Searcher for NCSU Quick Search that searches Fedora 4 databases via the Hippo CM
 Include the searcher gem in your Gemfile:
 
 ```
-gem 'quick_search-fedira_searcher'
+gem 'quick_search-fedora_searcher'
 ```
 
 Run bundle install:
