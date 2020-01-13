@@ -10,6 +10,7 @@ module QuickSearch
 
     def results
       return @results_list if @results_list
+
       @results_list = @response['items'].map do |value|
         result = OpenStruct.new(title: value['display_title'],
                                 link: value['item_link'],
@@ -23,12 +24,14 @@ module QuickSearch
 
     def build_date(date_in_millis)
       return if date_in_millis.nil?
+
       date = Time.at(date_in_millis / 1000).utc.to_date
       date.strftime('%b %d, %Y')
     end
 
     def build_description_block(annotations)
       return '' if annotations.nil?
+
       # Only allow the HTML "bold" tag (<b>), as that is used for highlighting
       description = annotations.join('...')
       sanitize(description, tags: ['b'])
