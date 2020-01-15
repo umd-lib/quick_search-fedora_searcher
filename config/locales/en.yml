@@ -1,0 +1,16 @@
+# Localization
+#
+# Replace the following placeholders with the correct values for
+# your installation.
+#
+# <NO_RESULTS_LINK>: The link for your site when there are no results
+
+en:
+  fedora_search:
+    display_name: "Fedora"
+    short_display_name: "Fedora"
+    search_form_placeholder: "Search Fedora"
+    module_callout: "Search Fedora"
+    error_service_message: "searching Fedora"
+    no_results_service_message: "a different search from Fedora"
+    no_results_link: "<NO_RESULTS_LINK>"
